@@ -1,0 +1,132 @@
+@charset "UTF-8";
+  
+	#pageAll {
+	    width: 1200px;
+	    min-height: 1500px;
+	    margin: 50px auto 0px auto;
+	    background-color: white;
+	}
+       
+    /* section */
+    #contents {
+        width: 990px;
+        float: left;
+        height: 700px;
+        padding: 10px 20px;
+        border-left: 1px solid #CCC;
+    }
+    
+    /* businessList.css */
+    #businessManager {
+        width: 900px;
+    }
+
+    #subtitle {
+        font-size: 2em;
+        display: inline-block;
+    }
+
+    #select {
+        float: right;
+    }
+
+    #order {
+        border: 1px solid #CCC;
+        border-radius: 4px;
+        font-family: 'Jal_Onuel';
+        color: #333;
+    }
+
+    table {
+        width: 940px;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    #businessList tr, #businessList td, #businessList th {
+        border-top: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+        text-align: center;           
+    }
+
+    #businessList th {
+        padding: 10px 0px;
+    }
+
+    #businessList tbody tr:hover {
+        background-color: #DDD;
+        cursor: pointer;
+    }
+
+    #businessList .profile {
+        width: 150px;
+        height: 150px; /* 프로필 사진을 뭘 넣을지에 따라서 여기를 건들 것 */
+    }
+
+    #businessList .business-name {
+        width: 150px;
+    }
+    
+    #businessList .business-tel {
+        width: 150px;
+    }
+
+    #businessList .business-email {
+        width: 150px;
+    }
+
+    #businessList .business-address {
+        width: 200px;
+        padding: 0px 10px;
+    }
+
+    #businessList .business-regdate {
+        width: 120px;
+    }
+
+    /* business */
+
+    #business {
+        margin-top: 20px;
+        padding: 30px 20px;
+        border: 1px solid #CCC;
+    }
+
+    #business img{
+        display: block;
+        margin: 0px auto;
+    }
+
+    #business #business-name {
+        text-align: center;
+        font-size: 2em;
+        margin-top: 20px
+    }
+
+    .business-info {
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    .state {
+        color: #777;
+        font-size: 1.2em;
+        
+    }
+
+    .business-state {
+        margin-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        border-bottom: 1px solid #CCC;
+    }
+
+    .business-count {
+        font-size: 1.2em;
+        padding: 10px
+    }
+
+    .btn {
+        margin: 10px;
+        float: right;
+    }

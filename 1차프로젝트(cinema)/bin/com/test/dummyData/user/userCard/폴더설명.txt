@@ -1,0 +1,9 @@
+카드번호 등록을 해야 텍스트파일 생성
+
+2. 결제에서 카드등록을 해서 만든다. (채원님)
+
+카드번호(String CardNumber)
+비밀번호(String CardPw)
+카드사(String CardCompany)
+유효기간(String ValidDate)
+

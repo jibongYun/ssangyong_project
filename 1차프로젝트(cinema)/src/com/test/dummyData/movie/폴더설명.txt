@@ -1,0 +1,11 @@
+제목■장르■런닝타임■개봉일■평점■감독■배우
+
+제목(String tittle)
+장르(String genre)
+감독(String director)
+배우(Stirng[] acotr)
+상영시간(String runningTime)
+나이제한(String ageRestriction)
+영화내용(String scenario)
+개봉일(String releaseDate)
+(상영종료일(Calendar endingDate) 

@@ -1,0 +1,4 @@
+회원등급(String Grade)
+포인트(String Point)
+
+

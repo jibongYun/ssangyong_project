@@ -1,0 +1,112 @@
+#submenu {
+	border-bottom: 1px solid gainsboro;
+	box-shadow: 0px 2px 2px rgb(238, 238, 238);
+	margin-top: 50px;
+}
+
+#submenu h1 {
+	/* width: 100%; */
+	background-color: white;
+	margin: 0px;
+	padding: 40px;
+	font-size: 2em;
+	text-align: center;
+}
+
+#section {
+	margin: 0px auto;
+	margin-top: -3px;
+	width: 1100px;
+}
+
+#searchCompany {
+	width: 1070px;
+	margin: 0px auto;
+	margin-top: 50px;
+}
+
+#ccount, #jcount {
+	margin-bottom: 10px;
+}
+
+#searchCompany .clist {
+	background-color: rgb(245, 245, 245);
+	/* border: 1px solid rgb(187, 187, 187); */
+	width: 513px;
+	height: 100px;
+	float: left;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+#searchCompany #companyList ul {
+	list-style: none;
+}
+
+#companyList .clist img {
+	width: 57px;
+	height: 57px;
+	margin: 20px;
+}
+
+#companyList .clist {
+	margin-right: 5px;
+	margin-bottom: px;
+}
+
+#companyList .clist #desc {
+	font-size: 18px;
+	float: left;
+	line-height: 55px;
+}
+
+
+#companyList .clist #desc h2 {
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 22px;
+}
+
+#companyList .clist #desc h3 {
+	font-size: 13px;
+	line-height: 25px;
+	margin: 0px;
+}
+
+/* //----------- */
+.ppic {
+	/* border: 1px solid red; */
+	border-radius: 5px;
+	width: 250px;
+	height: 190px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#searchPosition {
+	width: 1080px;
+	margin: 0px auto;
+	margin-top: 50px;
+}
+
+#positionList .plist {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 35px;
+	cursor: pointer;
+}
+
+.desc {
+	font-family: Jal_Onuel;
+	font-size: 17px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+.sm {
+	font-size: 15px;
+}
+
+.sm2 {
+	font-size: 13px;
+}
