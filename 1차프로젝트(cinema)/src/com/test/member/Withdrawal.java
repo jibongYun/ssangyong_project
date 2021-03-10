@@ -85,31 +85,30 @@ public class Withdrawal { // 회원 탈퇴 페이지
 			
 			switch ( select) {
 			
-			case 2 : ViewUserInfo.main(userInfo);
-					break;
-			
+			case 2 : ViewUserInfo.main(userInfo); // 돌아가기
+					break;			
 			case 1 : 
 				String all = ""; // LinkedList 누적용 변수
 				BufferedReader reader = new BufferedReader(new FileReader(path + "userList.txt"));
 
 				LinkedList<String> link = new LinkedList<String>();
 
-				while ((line = reader.readLine()) != null) { // 1. LinkedList 로 데이터를 전부 읽는다
+				while ((line = reader.readLine()) != null) { // LinkedList 로 데이터를 전부 읽는다
 					link.add(line);
 				}
 
 				reader.close(); // 읽기 종료
 
-				for (int i = 0; i < link.size(); i++) {// 2.list를 for문으로 돌려서 if + equals 로 원하는 정보를 찾는다
+				for (int i = 0; i < link.size(); i++) {// list를 for문으로 돌려서 if + equals 로 원하는 정보를 찾는다
 					String[] temp = link.get(i).split("■");
 
 					if (userInfo[0].equals(temp[0])) { // 동일 id 찾기
 						link.remove(i); // 발견되면 해당 내용삭제
-//				index--; // 삭제했으니 index 줄이기
+						index--; // 삭제 후 index 줄이기
 					}
 				}
 
-				for (int i = 0; i < link.size(); i++) {// 4.수정된 내용을 for + LinkedList로 돌려서 all 로 저장
+				for (int i = 0; i < link.size(); i++) {// 수정된 내용을 for + LinkedList로 돌려서 all 로 저장
 					// System.out.println(link.get(i)); // 저장되는정보 확인
 					all += link.get(i) + "\n";
 				}
