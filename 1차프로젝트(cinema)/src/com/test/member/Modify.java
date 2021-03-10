@@ -206,7 +206,8 @@ public class Modify { // 개인정보 수정 페이지
 
 	}
 
-	private static void in(int num, String input, String ID) {
+	
+	private static void in(int num, String input, String ID) { //윤지봉. 개인정보 수정하는 메서드
 
 		try {
 
@@ -219,15 +220,13 @@ public class Modify { // 개인정보 수정 페이지
 
 			LinkedList<String> link = new LinkedList<String>();
 
-			while ((line = reader.readLine()) != null) { // 1. LinkedList 로 데이터를 전부 읽는다
+			while ((line = reader.readLine()) != null) { // LinkedList 로 데이터를 전부 읽는다
 				link.add(line);
 			}
 
 			reader.close(); // 읽기 종료
 
-			// WYz2MrX■db22tDaN■웽쿓캚■01051188892■서울특별시 용산구 도원동 571-501
-
-			for (int i = 0; i < link.size(); i++) {// 2.list를 for문으로 돌려서 if + equals 로 원하는 정보를 찾는다
+			for (int i = 0; i < link.size(); i++) {// list를 for문으로 돌려서 if + equals 로 원하는 정보를 찾는다
 				String[] info = link.get(i).split("■");
 
 				if (ID.equals(info[0])) { // 동일 id 찾기
@@ -239,7 +238,7 @@ public class Modify { // 개인정보 수정 페이지
 				}
 			}
 
-			for (int i = 0; i < link.size(); i++) {// 4.수정된 내용을 for + LinkedList로 돌려서 all 로 저장
+			for (int i = 0; i < link.size(); i++) {// 수정된 내용을 for + LinkedList로 돌려서 all 로 저장
 				//	System.out.println(link.get(i)); // 저장되는정보 확인
 				all += link.get(i) + "\n";
 			}
