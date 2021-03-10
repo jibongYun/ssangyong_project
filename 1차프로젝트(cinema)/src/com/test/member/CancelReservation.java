@@ -57,19 +57,22 @@ public class CancelReservation {
 			String front ="";
 			String[] part;
 			while ((line = reader.readLine()) != null) {
-				//1■강남점■3■담보■08:00■10:00■0100100101100010100111110
+				
 				if (line.split("■")[0].equals(num)) { // 해당 line 찾기
 					part = line.split("■");
 					seatNum = line.split("■")[6];// -> 좌석숫자 (ex 1110111101011)
 					front = part[0]+"■"+part[1]+"■"+part[2]+"■"+part[3]+"■"+part[4]+"■"+part[5];
 					String line2 = seatNum; // 현재예약현황 // 좌석 숫자
+					
+					//윤지봉. 좌석 모형을 위한 배열
 					String[] cols = new String[] { "A", "B", "C", "D", "E" };
 					String[] rows = new String[] { "1", "2", "3", "4", "5" };
 					String reservedSeat = seat; //(ex A4 A5)
 					String[] reserved = reservedSeat.split(" ");
 					String resultLine = "";
 					int count = 0;
-
+					
+					//윤지봉. 좌석 배치 console 출력을 위한 이중 for문
 					for (int i = 0; i < reserved.length; i++) {// 모든자리 비교
 						resultLine = "";
 						for (int j = 1; j <= 5; j++) {// 세로
