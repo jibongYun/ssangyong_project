@@ -296,18 +296,14 @@ public class TeacherAttendanceDAO {
 	 * @param state 상태
 	 * @return list 학생 목록
 	 */
-	public static ArrayList<TeacherStudentListDTO> attendanceStudentList(int seq, String subjectseq, String state) {
-		
+	public static ArrayList<TeacherStudentListDTO> attendanceStudentList(int seq, String subjectseq, String state) 		
 		Connection conn = null;
 		CallableStatement stat = null;
 		ResultSet rs = null;
 		
 		try {
-
-			conn = DBUtil.open();
-			
-			String sql = "{ call procteastulistfind(?,?,?,?)}";
-			
+			conn = DBUtil.open();			
+			String sql = "{ call procteastulistfind(?,?,?,?)}";			
 			stat = conn.prepareCall(sql);
 			
 			stat.setString(1,subjectseq);
@@ -321,16 +317,14 @@ public class TeacherAttendanceDAO {
 			
 			ArrayList<TeacherStudentListDTO> list = new ArrayList<TeacherStudentListDTO>();
 			
-			while (rs.next()) {
-				
+			while (rs.next()) {				
 				TeacherStudentListDTO dto = new TeacherStudentListDTO();
 				
 				dto.setSeq(rs.getString("seq"));
 				dto.setName(rs.getString("name"));
 				dto.setRegistrationDate(rs.getString("regist"));
 				
-				list.add(dto);
-				
+				list.add(dto);				
 			}
 			
 			return list;
